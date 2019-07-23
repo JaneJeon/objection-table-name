@@ -1,37 +1,31 @@
 {
-  "name": "@xyluet/objection-table-name",
+  "name": "objection-table-name",
   "description": "Plugin that automatically set tableName using class name to objection.js",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --ignore-path .gitignore ."
+    "test": "jest"
   },
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "objection",
-    "objectionjs",
+    "objection.js",
     "class",
     "tablename",
     "plugin"
   ],
-  "author": {
-    "name": "Ali Sunjaya",
-    "email": "ali.sunjayaa@gmail.com"
-  },
-  "repository": "xyluet/objection-table-name",
+  "repository": "JaneJeon/objection-table-name",
+  "author": "Jane Jeon <JaneJeon9719@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.11",
-    "objection": "^1.6.3",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "objection": "^1.6.9",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "semi": false
   }
 }
