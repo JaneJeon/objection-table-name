@@ -1,4 +1,6 @@
-# objection-table-name [![CircleCI](https://circleci.com/gh/JaneJeon/objection-table-name.svg?style=shield)](https://circleci.com/gh/JaneJeon/objection-table-name) [![npm version](https://badge.fury.io/js/objection-table-name.svg)](https://badge.fury.io/js/objection-table-name)
+# objection-table-name
+
+[![CircleCI](https://circleci.com/gh/JaneJeon/objection-table-name.svg?style=shield)](https://circleci.com/gh/JaneJeon/objection-table-name) [![npm version](https://badge.fury.io/js/objection-table-name.svg)](https://badge.fury.io/js/objection-table-name) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com)
 
 ## What To Solve
 
