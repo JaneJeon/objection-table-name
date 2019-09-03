@@ -16,6 +16,11 @@
     "pre-commit": "standard --fix",
     "pre-push": "yarn test"
   },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
     "lodash.memoize": "^4.1.2",
