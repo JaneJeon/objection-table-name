@@ -1,6 +1,6 @@
 # objection-table-name
 
-[![CircleCI](https://circleci.com/gh/JaneJeon/objection-table-name.svg?style=shield)](https://circleci.com/gh/JaneJeon/objection-table-name) [![npm version](https://badge.fury.io/js/objection-table-name.svg)](https://badge.fury.io/js/objection-table-name) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com)
+[![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name) [![Maintainability](https://api.codeclimate.com/v1/badges/909f04aee0f1137ac368/maintainability)](https://codeclimate.com/github/JaneJeon/objection-table-name/maintainability) [![npm](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![npm](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![David](https://img.shields.io/david/JaneJeon/objection-table-name)](https://david-dm.org/JaneJeon/objection-table-name) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com) [![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE)
 
 ## What To Solve
 
