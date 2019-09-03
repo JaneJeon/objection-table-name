@@ -27,6 +27,7 @@
     "pluralize": "^8.0.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.6",
     "husky": "^3.0.5",
     "is-ci": "^2.0.0",
     "jest": "^24.1.0",
