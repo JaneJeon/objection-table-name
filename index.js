@@ -1,6 +1,6 @@
-const memoize = require("lodash/memoize")
-const camelCase = require("lodash/camelCase")
-const { plural } = require("pluralize")
+const memoize = require('lodash.memoize')
+const camelCase = require('lodash.camelcase')
+const { plural } = require('pluralize')
 
 const pluralCamelMemoized = memoize(str => plural(camelCase(str)))
 

@@ -1,31 +1,39 @@
 {
   "name": "objection-table-name",
   "description": "Plugin that automatically set tableName using class name to objection.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
+  "repository": "JaneJeon/objection-table-name",
+  "author": "Jane Jeon <JaneJeon9719@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "coverage": "if is-ci; then cat ./coverage/lcov.info | coveralls; fi",
+    "lint": "standard"
+  },
+  "husky": {
+    "pre-commit": "standard --fix",
+    "pre-push": "yarn test"
+  },
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.memoize": "^4.1.2",
+    "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.5",
+    "is-ci": "^2.0.0",
+    "jest": "^24.1.0",
+    "objection": "^1.6.9",
+    "standard": "^14.1.0"
   },
   "keywords": [
     "objection",
     "objection.js",
     "class",
     "tablename",
+    "activerecord",
     "plugin"
-  ],
-  "repository": "JaneJeon/objection-table-name",
-  "author": "Jane Jeon <JaneJeon9719@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.17.11",
-    "pluralize": "^8.0.0"
-  },
-  "devDependencies": {
-    "jest": "^24.1.0",
-    "objection": "^1.6.9",
-    "prettier": "^1.18.2"
-  },
-  "prettier": {
-    "semi": false
-  }
+  ]
 }

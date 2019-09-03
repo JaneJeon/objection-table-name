@@ -1,13 +1,13 @@
 # objection-table-name
 
-[![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name) [![Maintainability](https://api.codeclimate.com/v1/badges/909f04aee0f1137ac368/maintainability)](https://codeclimate.com/github/JaneJeon/objection-table-name/maintainability) [![npm](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/objection-table-name)](https://bundlephobia.com/result?p=objection-table-name) [![David](https://img.shields.io/david/JaneJeon/objection-table-name)](https://david-dm.org/JaneJeon/objection-table-name) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com) [![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE)
+[![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name) [![Coverage Status](https://coveralls.io/repos/github/JaneJeon/objection-tablename/badge.svg?branch=master)](https://coveralls.io/github/JaneJeon/objection-tablename?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/909f04aee0f1137ac368/maintainability)](https://codeclimate.com/github/JaneJeon/objection-table-name/maintainability) [![NPM](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![bundle size](https://img.shields.io/bundlephobia/minzip/objection-table-name)](https://bundlephobia.com/result?p=objection-table-name) [![David](https://img.shields.io/david/JaneJeon/objection-table-name)](https://david-dm.org/JaneJeon/objection-table-name) [![Known Vulnerabilities](https://snyk.io//test/github/JaneJeon/objection-table-name/badge.svg?targetFile=package.json)](https://snyk.io//test/github/JaneJeon/objection-table-name?targetFile=package.json) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com) [![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE) [![Docs](https://img.shields.io/badge/docs-github-blue)](https://janejeon.github.io/objection-table-name)
 
 ## What To Solve
 
 ```js
 class NodeModule extends Model {
   static get tableName() {
-    return "nodeModules" // you type it on every model
+    return 'nodeModules' // you type it on every model
   }
 }
 ```
@@ -27,8 +27,8 @@ console.log(NodeModule.tableName)
 ## Usage
 
 ```js
-const { Model } = require("objection")
-const tableName = require("objection-table-name")
+const { Model } = require('objection')
+const tableName = require('objection-table-name')
 
 // The common way is:
 // - make this is as your base class
@@ -46,7 +46,7 @@ You can define your own mapper
 
 ```js
 function upperFirst([s, ...rest]) {
-  return [s.toUpperCase(), ...rest].join("")
+  return [s.toUpperCase(), ...rest].join('')
 }
 
 class BaseModel extends TableNamer({
@@ -59,7 +59,3 @@ console.log(foo_Bar.tableName)
 ```
 
 [Lodash](https://lodash.com/docs/) provides some already defined caseMappers. You can use it too.
-
-## License
-
-MIT
