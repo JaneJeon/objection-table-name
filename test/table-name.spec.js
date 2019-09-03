@@ -1,27 +1,27 @@
-const { Model } = require("objection")
-const TableNamer = require("../")
+const { Model } = require('objection')
+const TableNamer = require('../')
 
-function getTableNameFromClass(cls) {
+function getTableNameFromClass (cls) {
   return cls.tableName
 }
 
-function upperFirst([c, ...rest]) {
-  return [c.toUpperCase(), ...rest].join("")
+function upperFirst ([c, ...rest]) {
+  return [c.toUpperCase(), ...rest].join('')
 }
 
-function overrideClassName(cls, name) {
-  Object.defineProperty(cls, "name", { value: name })
+function overrideClassName (cls, name) {
+  Object.defineProperty(cls, 'name', { value: name })
 }
 
-describe("table name from class name", () => {
-  describe("when using defaults", () => {
+describe('table name from class name', () => {
+  describe('when using defaults', () => {
     it("should resolve 'tablename' with camelCase and plural", () => {
       class BaseModel extends TableNamer()(Model) {}
       const testClass = {
-        Foo: "foos",
-        FooBar: "fooBars",
-        fooBar: "fooBars",
-        Person: "people"
+        Foo: 'foos',
+        FooBar: 'fooBars',
+        fooBar: 'fooBars',
+        Person: 'people'
       }
       class TestModel extends BaseModel {}
       Object.entries(testClass).forEach(([className, tableName]) => {
@@ -31,15 +31,15 @@ describe("table name from class name", () => {
     })
   })
 
-  describe("when using customs", () => {
+  describe('when using customs', () => {
     it("should resolve 'tableName'", () => {
       const mock = jest.fn(className => upperFirst(className))
       class BaseModel extends TableNamer({
         caseMapper: mock
       })(Model) {}
       const testClass = {
-        foo_bar: "Foo_bar",
-        fooBar: "FooBar"
+        foo_bar: 'Foo_bar',
+        fooBar: 'FooBar'
       }
       class TestModel extends BaseModel {}
       Object.entries(testClass).forEach(([className, tableName]) => {

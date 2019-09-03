@@ -8,10 +8,10 @@ const pluralCamelMemoized = memoize(str => plural(camelCase(str)))
  * @param {Object} options:
  * @param {Function} options.caseMapper
  */
-function tableNamer({ caseMapper = pluralCamelMemoized } = {}) {
+function tableNamer ({ caseMapper = pluralCamelMemoized } = {}) {
   return Model =>
     class extends Model {
-      static get tableName() {
+      static get tableName () {
         return caseMapper(this.name)
       }
     }
