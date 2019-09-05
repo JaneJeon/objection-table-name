@@ -1,7 +1,7 @@
 {
   "name": "objection-table-name",
   "description": "Plugin that automatically set tableName using class name to objection.js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "repository": "JaneJeon/objection-table-name",
   "author": "Jane Jeon <JaneJeon9719@gmail.com>",
