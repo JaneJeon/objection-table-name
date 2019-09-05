@@ -1,7 +1,7 @@
 {
   "name": "objection-table-name",
   "description": "Plugin that automatically set tableName using class name to objection.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "repository": "JaneJeon/objection-table-name",
   "author": "Jane Jeon <JaneJeon9719@gmail.com>",
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "coverage": "if is-ci; then cat ./coverage/lcov.info | coveralls; fi",
+    "coverage": "is-ci && codecov",
     "lint": "standard"
   },
   "husky": {
@@ -27,7 +27,7 @@
     "pluralize": "^8.0.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.6",
+    "codecov": "^3.5.0",
     "husky": "^3.0.5",
     "is-ci": "^2.0.0",
     "jest": "^24.1.0",
