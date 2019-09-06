@@ -10,11 +10,24 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "coverage": "is-ci && codecov",
-    "lint": "standard"
+    "lint": "standard | snazzy && prettier --check '**/*.{md,json,yml,yaml}'"
   },
   "husky": {
-    "pre-commit": "standard --fix",
-    "pre-push": "yarn test"
+    "hooks": {
+      "pre-commit": "standard --fix",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "standard --fix",
+      "git add"
+    ],
+    "*.{md,json,yml,yaml}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "standard": {
     "env": [
@@ -33,7 +46,10 @@
     "jest": "^24.1.0",
     "jest-junit": "^8.0.0",
     "knex": "^0.19.3",
+    "lint-staged": "^9.2.5",
     "objection": "^1.6.9",
+    "prettier": "^1.18.2",
+    "snazzy": "^8.0.0",
     "standard": "^14.1.0"
   },
   "keywords": [
