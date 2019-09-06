@@ -50,7 +50,7 @@ function upperFirst([s, ...rest]) {
 }
 
 class BaseModel extends TableNamer({
-  caseMapper: upperFirst,
+  caseMapper: upperFirst
 })(Model) {}
 
 class foo_Bar extends BaseModel {}
