@@ -1,6 +1,16 @@
 # objection-table-name
 
-[![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name) [![codecov](https://codecov.io/gh/JaneJeon/objection-table-name/branch/master/graph/badge.svg)](https://codecov.io/gh/JaneJeon/objection-table-name) [![Maintainability](https://api.codeclimate.com/v1/badges/909f04aee0f1137ac368/maintainability)](https://codeclimate.com/github/JaneJeon/objection-table-name/maintainability) [![NPM](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name) [![install size](https://packagephobia.now.sh/badge?p=objection-table-name)](https://packagephobia.now.sh/result?p=objection-table-name) [![David](https://img.shields.io/david/JaneJeon/objection-table-name)](https://david-dm.org/JaneJeon/objection-table-name) [![Known Vulnerabilities](https://snyk.io//test/github/JaneJeon/objection-table-name/badge.svg?targetFile=package.json)](https://snyk.io//test/github/JaneJeon/objection-table-name?targetFile=package.json) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com) [![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE) [![Docs](https://img.shields.io/badge/docs-github-blue)](https://janejeon.github.io/objection-table-name) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name)
+[![codecov](https://codecov.io/gh/JaneJeon/objection-table-name/branch/master/graph/badge.svg)](https://codecov.io/gh/JaneJeon/objection-table-name)
+[![NPM](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
+[![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
+[![install size](https://packagephobia.now.sh/badge?p=objection-table-name)](https://packagephobia.now.sh/result?p=objection-table-name)
+[![David](https://img.shields.io/david/JaneJeon/objection-table-name)](https://david-dm.org/JaneJeon/objection-table-name)
+[![Known Vulnerabilities](https://snyk.io//test/github/JaneJeon/objection-table-name/badge.svg?targetFile=package.json)](https://snyk.io//test/github/JaneJeon/objection-table-name?targetFile=package.json)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com)
+[![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE)
+[![Docs](https://img.shields.io/badge/docs-github-blue)](https://janejeon.github.io/objection-table-name)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## What To Solve
 

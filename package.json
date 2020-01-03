@@ -1,6 +1,6 @@
 {
   "name": "objection-table-name",
-  "description": "Plugin that automatically set tableName using class name to objection.js",
+  "description": "ActiveRecord-style objection.js plugin to auto-fill tableName",
   "version": "1.1.1",
   "main": "index.js",
   "repository": "JaneJeon/objection-table-name",
@@ -47,10 +47,14 @@
     "jest-junit": "^9.0.0",
     "knex": "^0.20.1",
     "lint-staged": "^9.2.5",
-    "objection": "^1.6.9",
+    "objection-1": "npm:objection@1",
+    "objection-2": "npm:objection@2",
     "prettier": "^1.18.2",
     "snazzy": "^8.0.0",
     "standard": "^14.1.0"
+  },
+  "peerDependencies": {
+    "objection": "^1 || ^2"
   },
   "keywords": [
     "objection",
