@@ -12,6 +12,10 @@
 [![Docs](https://img.shields.io/badge/docs-github-blue)](https://janejeon.github.io/objection-table-name)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Note about Objection.js
+
+This library is tested to work with Objection.js v2!
+
 ## What To Solve
 
 ```js

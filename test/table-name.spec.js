@@ -32,7 +32,7 @@ function overrideClassName (cls, name) {
         })
       })
     })
-  
+
     describe('when using customs', () => {
       it("should resolve 'tableName'", () => {
         const mock = jest.fn(className => upperFirst(className))
