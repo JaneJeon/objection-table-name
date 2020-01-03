@@ -1,7 +1,7 @@
 {
   "name": "objection-table-name",
   "description": "ActiveRecord-style objection.js plugin to auto-fill tableName",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "index.js",
   "repository": "JaneJeon/objection-table-name",
   "author": "Jane Jeon <JaneJeon9719@gmail.com>",
