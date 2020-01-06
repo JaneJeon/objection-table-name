@@ -14,7 +14,7 @@
 
 ## Note about Objection.js
 
-This library is tested to work with Objection.js v2!
+This library is tested to work with _both_ Objection.js v1 and v2!
 
 ## What To Solve
 
