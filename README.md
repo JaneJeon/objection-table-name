@@ -1,6 +1,7 @@
 # objection-table-name
 
 [![CircleCI](https://img.shields.io/circleci/build/github/JaneJeon/objection-table-name)](https://circleci.com/gh/JaneJeon/objection-table-name)
+[![GitHub](https://github.com/JaneJeon/objection-table-name/actions)](https://github.com/JaneJeon/objection-table-name/workflows/Build/badge.svg)
 [![codecov](https://codecov.io/gh/JaneJeon/objection-table-name/branch/master/graph/badge.svg)](https://codecov.io/gh/JaneJeon/objection-table-name)
 [![NPM](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
 [![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
