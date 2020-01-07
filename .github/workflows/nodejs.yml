@@ -1,5 +1,9 @@
 name: Build
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 env:
   CI: true
 
@@ -9,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ["10", "12"]
+        node-version: [10.X, 12.X]
 
     steps:
       - uses: actions/checkout@v1
@@ -41,4 +45,4 @@ jobs:
           path: junit.xml
       - name: Test Coverage
         run: yarn coverage
-        if: matrix.node-version == '12'
+        if: matrix.node-version == '12.X' && github.ref == 'refs/heads/master'
