@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: ["10", "12"]
 
     steps:
       - uses: actions/checkout@v1
@@ -41,3 +41,4 @@ jobs:
           path: junit.xml
       - name: Test Coverage
         run: yarn coverage
+        if: matrix.node-version == '12'
