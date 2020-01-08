@@ -13,10 +13,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.X, 12.X]
+        node-version: ["10", "12"]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -35,14 +35,23 @@ jobs:
 
       - name: Lint
         run: yarn lint
+
       - name: Test
-        run: yarn test --coverage --ci --runInBand --reporters=default --reporters=jest-junit --forceExit
+        run: yarn test:ci
+        if: matrix.node-version != '12'
+      - name: Test With Coverage
+        run: yarn test:ci --coverage
+        if: matrix.node-version == '12'
+
       - name: Archive Test Results
         # if: failure()
         uses: actions/upload-artifact@v1
         with:
           name: Test Report
           path: junit.xml
-      - name: Test Coverage
-        run: yarn coverage
-        if: matrix.node-version == '12.X' && github.ref == 'refs/heads/master'
+
+      - name: Upload Coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+        if: matrix.node-version == '12' && github.ref == 'refs/heads/master'
