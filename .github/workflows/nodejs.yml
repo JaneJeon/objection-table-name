@@ -43,6 +43,9 @@ jobs:
         with:
           name: Test Report
           path: junit.xml
+
       - name: Test Coverage
-        run: yarn coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
         if: matrix.node-version == '12.X' && github.ref == 'refs/heads/master'
