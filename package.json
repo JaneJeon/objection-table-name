@@ -44,7 +44,7 @@
     "jest": "^24.1.0",
     "jest-junit": "^10.0.0",
     "knex": "^0.20.1",
-    "lint-staged": "^9.2.5",
+    "lint-staged": "^10.0.0",
     "objection-1": "npm:objection@1",
     "objection-2": "npm:objection@2",
     "prettier": "^1.18.2",
