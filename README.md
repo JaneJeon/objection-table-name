@@ -21,7 +21,7 @@ This library is tested to work with _both_ Objection.js v1 and v2!
 ```js
 class NodeModule extends Model {
   static get tableName() {
-    return "nodeModules"; // you type it on every model
+    return 'nodeModules' // you type it on every model
   }
 }
 ```
@@ -30,7 +30,7 @@ what about:
 
 ```js
 class NodeModule extends Model {}
-console.log(NodeModule.tableName);
+console.log(NodeModule.tableName)
 // => nodeModules
 ```
 
@@ -41,8 +41,8 @@ console.log(NodeModule.tableName);
 ## Usage
 
 ```js
-const { Model } = require("objection");
-const tableName = require("objection-table-name");
+const { Model } = require('objection')
+const tableName = require('objection-table-name')
 
 // The common way is:
 // - make this is as your base class
@@ -52,7 +52,7 @@ class BaseModel extends tableName()(Model) {}
 
 // TransactionDetail.js
 class TransactionDetail extends BaseModel {}
-console.log(TransactionDetail.tableName);
+console.log(TransactionDetail.tableName)
 // => transactionDetails
 ```
 
@@ -60,7 +60,7 @@ You can define your own mapper
 
 ```js
 function upperFirst([s, ...rest]) {
-  return [s.toUpperCase(), ...rest].join("");
+  return [s.toUpperCase(), ...rest].join('')
 }
 
 class BaseModel extends TableNamer({
@@ -68,7 +68,7 @@ class BaseModel extends TableNamer({
 })(Model) {}
 
 class foo_Bar extends BaseModel {}
-console.log(foo_Bar.tableName);
+console.log(foo_Bar.tableName)
 // => Foo_Bar
 ```
 

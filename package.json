@@ -9,30 +9,13 @@
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "test:ci": "yarn test --ci --reporters=default --reporters=jest-junit",
-    "lint": "standard | snazzy && prettier --check '**/*.{md,json,yml,yaml}'"
+    "lint": "run-s lint:*",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "standard --fix",
-      "pre-push": "yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "standard --fix",
-      "git add"
-    ],
-    "*.{md,json,yml,yaml}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "standard": {
-    "env": [
-      "jest"
-    ]
+  "prettier": "@janejeon/prettier-config",
+  "eslintConfig": {
+    "extends": "@janejeon"
   },
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
@@ -40,16 +23,26 @@
     "pluralize": "^8.0.0"
   },
   "devDependencies": {
+    "@janejeon/eslint-config": "^1.0.1",
+    "@janejeon/prettier-config": "^1.0.4",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.0.7",
     "jest": "^26.0.1",
     "jest-junit": "^11.0.0",
     "knex": "^0.21.0",
     "lint-staged": "^10.0.0",
+    "npm-run-all": "^4.1.5",
     "objection-1": "npm:objection@1",
     "objection-2": "npm:objection@2",
-    "prettier": "^1.18.2",
-    "snazzy": "^8.0.0",
-    "standard": "^14.1.0"
+    "prettier": "^2.0.5",
+    "skip-ci": "^1.0.3"
   },
   "peerDependencies": {
     "objection": "^1 || ^2"

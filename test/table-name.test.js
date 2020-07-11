@@ -1,14 +1,14 @@
 const TableNamer = require('../')
 
-function getTableNameFromClass (cls) {
+function getTableNameFromClass(cls) {
   return cls.tableName
 }
 
-function upperFirst ([c, ...rest]) {
+function upperFirst([c, ...rest]) {
   return [c.toUpperCase(), ...rest].join('')
 }
 
-function overrideClassName (cls, name) {
+function overrideClassName(cls, name) {
   Object.defineProperty(cls, 'name', { value: name })
 }
 
