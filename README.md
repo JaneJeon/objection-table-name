@@ -1,6 +1,6 @@
 # objection-table-name
 
-[![GitHub Actions](https://github.com/JaneJeon/objection-table-name/actions)](https://github.com/JaneJeon/objection-table-name/workflows/Build/badge.svg)
+[![CircleCI](https://circleci.com/gh/JaneJeon/objection-table-name.svg?style=shield)](https://circleci.com/gh/JaneJeon/objection-table-name)
 [![codecov](https://codecov.io/gh/JaneJeon/objection-table-name/branch/master/graph/badge.svg)](https://codecov.io/gh/JaneJeon/objection-table-name)
 [![NPM](https://img.shields.io/npm/v/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
 [![Downloads](https://img.shields.io/npm/dt/objection-table-name)](https://www.npmjs.com/package/objection-table-name)
@@ -10,7 +10,8 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JaneJeon/objection-table-name)](https://dependabot.com)
 [![License](https://img.shields.io/npm/l/objection-table-name)](https://github.com/JaneJeon/objection-table-name/blob/master/LICENSE)
 [![Docs](https://img.shields.io/badge/docs-github-blue)](https://janejeon.github.io/objection-table-name)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 ## Note about Objection.js
 
