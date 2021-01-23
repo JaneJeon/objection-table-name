@@ -1,11 +1,11 @@
 {
   "name": "objection-table-name",
   "description": "ActiveRecord-style objection.js plugin to auto-fill tableName",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "main": "index.js",
   "repository": "JaneJeon/objection-table-name",
   "author": "Jane Jeon <JaneJeon9719@gmail.com>",
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watch",
