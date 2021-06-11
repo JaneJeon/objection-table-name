@@ -12,6 +12,8 @@
 [![Standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
+> Enjoy objection-tablename? Check out my other objection plugins: [objection-hashid](https://github.com/JaneJeon/objection-hashid) and [objection-authorize](https://github.com/JaneJeon/objection-authorize)!
+
 ## Note about Objection.js
 
 This library is tested to work with _both_ Objection.js v1 and v2!
